@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "author": "Shane Nord",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 117.39, "left": -19.21, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -127.42,
+      "left": 696.98,
+      "attrs": { "color": "red", "bounce": "0" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -91.28,
+      "left": -126.75,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -2.24,
+      "left": -130.55,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir1",
+      "top": -224.75,
+      "left": 782.54,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "led1:A", "r1:1", "red", [ "v0" ] ],
+    [ "led1:C", "uno:GND.1", "black", [ "v95.39", "h1.8" ] ],
+    [ "btn1:2.l", "uno:GND.2", "black", [ "h-42.2", "v533.13", "h-168.1" ] ],
+    [ "pir1:VCC", "uno:5V", "red", [ "v500.18", "h-679.78" ] ],
+    [ "pir1:GND", "uno:GND.2", "black", [ "v491.93", "h-686.06" ] ],
+    [ "pir1:OUT", "uno:2", "white", [ "v224.79", "h-602.13" ] ],
+    [ "btn1:1.l", "uno:3", "white", [ "h0" ] ],
+    [ "r1:2", "uno:4", "red", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
