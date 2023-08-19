@@ -7,4 +7,5 @@ Had trouble with the debounce on the analog input. There are multiple physical s
 
 
 ** Next Step
+
 The next step is to add in the alarm panel functionality. Start with the arming and disarming.
