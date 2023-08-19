@@ -4,6 +4,8 @@
 
 Testing of a menu system for the Arduino Alarm System.
 
+Working in Wokwi.com as a simulated environment.
+
 Had trouble with the debounce on the analog input. There are multiple physical switches attached to a singe analog input which need to be debounced. Came up with a "best guess" approach which is usable.
 
 
